@@ -325,3 +325,149 @@ h2 {
   color: white;
   font-size: 1.4rem;
 }
+
+/* Tablet screen */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Header Container Adjustments */
+  .header-container {
+    flex-direction: row;
+    min-height: auto;
+  }
+
+  .logo {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .logo1 img {
+    height: 14rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .logo2 {
+    font-size: 1.4rem;
+    padding: 2.5rem;
+  }
+
+  nav ul {
+    font-size: 1.3rem;
+  }
+
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    grid-column: span 2;
+    padding: 1.5rem;
+  }
+
+  .one h1,
+  .two h1,
+  .three h1,
+  .four h1 {
+    font-size: 3rem;
+  }
+
+  .one p,
+  .two p,
+  .three p,
+  .four p {
+    font-size: 1.4rem;
+  }
+
+  .middle {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .five,
+  .six,
+  .seven {
+    padding: 2rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Header Container Adjustments */
+  .header-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .logo {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .logo1 img {
+    height: 12rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .logo2 {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+
+  /* Navigation Adjustments */
+  nav ul {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  /* Main Content Grid Adjustments */
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    grid-column: 1 / -1;
+    padding: 1rem;
+  }
+
+  /* Font Size Adjustments */
+  .one h1,
+  .two h1,
+  .three h1,
+  .four h1 {
+    font-size: 2.5rem;
+  }
+
+  .one p,
+  .two p,
+  .three p,
+  .four p {
+    font-size: 1.2rem;
+  }
+
+  /* Middle Content Adjustments */
+  .middle {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .five,
+  .six,
+  .seven {
+    padding: 1rem;
+  }
+
+  /* Footer Adjustments */
+  .footer {
+    grid-template-columns: 1fr;
+    font-size: 1.2rem;
+  }
+}
